@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма опроса пользователей </title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+<body>
+  <h1 id="title">Форма опроса пользователей</h1>
+<p id="description">Пожалуйста, заполните эту форму необходимой информацией
+</p>
+<form id="survey-form">
+  <fieldset>
+  <label id="name-label">Введите свое имя:
+    <input id="name" type="text" placeholder="Иван" required>
+   </label>
+  <label id="email-label">Ввидите свой Email:
+      <input id="email" type="email" placeholder="Ivan@gmail.com" required>
+   </label>
+   <label id="number-label">Ввидите сколько вам лет:
+      <input id="number" type="number" min="13" max="120" placeholder="0" required>
+    </label>
+     </fieldset>
+     <fieldset>Пользовались ранее данной формой
+      <label>
+  <input type="radio" name="account-type" value="inline" class="inline" >Да
+    </label>
+    <label>
+  <input type="radio" name="account-type" value="inline" class="inline">Нет
+    </label>
+    <label>
+  <input type="checkbox" value="inline" class="inline">Я принимаю <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form" class="checkbox">правила и условия</a>
+    </label>
+    <label>
+  <input type="checkbox" value="inline" class="inline">Я даю разрешение на оброботку данных
+    </label>
+    </fieldset>
+    <fieldset>
+    <label>Как вы узнали о нас?
+  <select id="dropdown">
+    <option value="">Реклама в интернете</option>
+    <option value="1">Реклама на улице</option>
+    <option value="2">Реклама по ТВ</option>
+    </label>
+  </select>
+  <label>
+     </feildset>
+      <feildset>
+  <textarea placeholder="Коротко обо мне..."></textarea>
+</feildset>
+  <input id="submit" type="submit">
+</form>
+
+
+
+
+</body>
